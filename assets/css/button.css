@@ -1,0 +1,158 @@
+
+.consultab-btn-container {
+    vertical-align: middle;
+}
+
+.consultab-button  {  
+	color: var(--color-theme-white);
+	font-size: var(--font-size-body);
+    font-family: var(--global-font-family);
+    letter-spacing: var(--letter-spacing);
+	font-weight:var(--font-weight-regular) ;
+    line-height: var(--font-line-height-body);
+	background-color: var(--global-font-title);
+    border-radius: var(--border-radius);
+    padding: 10px 30px; 
+    position: relative;
+	display: inline-block;
+	vertical-align: top;
+	text-transform: capitalize; 
+    z-index: 10;
+    cursor:pointer; 
+	border: none; 
+	overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out; 
+}
+
+a.consultab-button{
+    color: var(--color-theme-white);
+}
+
+.consultab-button::before{
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 0px;
+    z-index: -1;
+    content: '';
+    background: var(--color-theme-primary);
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.consultab-button:hover::before{
+    left: 0%;
+    right: auto;
+    width: 100%;
+}
+
+.consultab-button:hover {	
+	color: var(--color-theme-white);
+}
+
+button:hover,
+button:focus {
+    outline: none;
+}
+
+.consultab-button .text-btn{
+    margin-right: 10px;
+    position: relative; 
+}
+
+.consultab-button.consultab-button-link {
+    background: var(--global-font-title);
+    font-size: var(--font-size-body);
+    color: var(--color-theme-white);
+    font-weight: var(--font-weight-medium);
+    text-transform: capitalize;
+    padding: 12px 14px; 
+    box-shadow: none;
+}
+
+.consultab-button.consultab-button-link::before{
+    display: none;
+}
+
+.consultab-button.consultab-button-link span i{
+    color: var(--color-theme-primary);
+}
+
+.consultab-button .consultab-icon-right {
+    padding-left: 5px;
+}
+
+.consultab-button.consultab-button-link:hover,
+.consultab-button.consultab-button-link:hover span i {
+	background: var(--color-theme-primary);
+	color: var(--color-theme-white);
+    transition: 0.5s ease-in-out;
+}
+
+.consultab-button.consultab-button-link:hover span.main {
+	background: var(--color-theme-secondary);
+}
+
+.consultab-button.consultab-button-link {
+    color: var(--color-theme-white);
+}
+
+.consultab-button span.main {
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-theme-secondary);
+    display: inline-block;
+	z-index: 1;	
+}
+
+.consultab-button:hover span.main {
+	background: var(--color-theme-white);
+}
+
+.consultab-button.consultab-button-link:hover span.text-btn{color: var(--global-font-title);}
+
+.button-link i {
+	font-size: var(--font-size-body);
+	margin-left: 5px;
+}
+
+.consultab-button.comment-reply-link{
+    background: var(--global-font-title);
+    font-size: var(--font-size-small);
+    color: var(--color-theme-white);
+    font-weight: var(--font-weight-medium);
+    text-transform: capitalize;
+    padding: 2px 15px; 
+    box-shadow: none;
+}
+
+.consultab-button.comment-reply-link:hover{
+	background: var(--color-theme-primary);
+	color: var(--color-theme-white);
+    transition: 0.5s ease-in-out;
+}
+
+.consultab-button-post:before{
+    display: none;
+}
+
+.consultab-button-post{
+    background: var(--color-theme-primary);
+    font-size: var(--font-size-body);
+    color: var(--color-theme-white);
+    font-weight: var(--font-weight-medium);
+    text-transform: capitalize;
+    padding: 11px 30px; 
+    box-shadow: none;
+}
+
+.consultab-button-post:hover{
+    background: var(--global-font-title);
+	color: var(--color-theme-white);
+    transition: 0.5s ease-in-out;
+}

@@ -1,0 +1,16 @@
+.qodef-m-subtitle{
+    color: var(--global-font-subtitle);
+}
+.cust_team .qodef-m-inner .qodef-m-image .qodef-m-media-image img {
+    width: 100%;
+}
+.blog-sidebar .wp-block-latest-posts__featured-image{
+    margin-right: 20px !important;
+    margin-bottom: 0px !important;
+}
+ul.blog-sidebar{
+    margin: 0px !important;
+}
+.qodef-addons-blog-slider.qodef-item-layout--boxed .qodef-e-inner{
+    box-shadow: none;
+}
